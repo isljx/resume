@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>事件配置</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="set_act_content">     
+        <div class="yyt_head">
+           <div class="yyt_title f12px">某某事件配置</div>
+           <i class="icon-close"></i>
+        </div>
+		<div class="set-action-content">
+        	<div class="set-title fB"><a class="blue" href="#">进入手机卖场</a></div>
+            <div class="set-content">
+            	<span>所属区域：</span>
+                <div class="divselect" style="display: inline-block">
+                  <cite>请选择</cite>
+                  <ul>
+                     <li><a href="javascript:;" selectid="wlmq">乌鲁木齐</a></li>
+                     <li><a href="javascript:;" selectid="ht">和田</a></li>
+                  </ul>
+                </div>
+                <div class="divselect" style="display: inline-block">
+                  <cite>请选择</cite>
+                  <ul>
+                     <li><a href="javascript:;" selectid="smgq">水磨沟区</a></li>
+                     <li><a href="javascript:;" selectid="tcq">塔城区</a></li>
+                  </ul>
+                </div>
+                <div class="store-check">
+                	<div><input type="checkbox" /><label>南湖移动体验厅</label></div>
+                    <div><input type="checkbox" /><label>鲤鱼山路移动体验厅</label></div>
+                    <div><input type="checkbox" /><label>劳动节移动体验厅</label></div>
+                    <div><input type="checkbox" /><label>南湖移动体验厅</label></div>
+                    <div><input type="checkbox" /><label>鲤鱼山路移动体验厅</label></div>
+                    <div><input type="checkbox" /><label>劳动节移动体验厅</label></div>
+                    <div><input type="checkbox" /><label>鲤鱼山路移动体验厅</label></div>
+                    <div><input type="checkbox" /><label>劳动节移动体验厅</label></div>
+               	</div>
+            </div>
+        </div>
+         <div class="set-action-opt">
+           <input type="button" class="form-button" value="保存">
+           <input type="submit" class="form-button" value="取消"> 
+         </div>
+      </div>
+</body>
+</html>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/main-xx.js"></script>
+<script src="js/divselect.js"></script>
+<script>
+	$(function(){
+		$("i.icon-close").click(function() {
+            closeDialog(2);
+        });	
+	})
+</script>

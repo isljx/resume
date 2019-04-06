@@ -1,0 +1,66 @@
+@charset "utf-8";
+/*
+* author: 许财明
+* date: 2015-09-04
+* scope: 营销活动策划(yxhdch.html),展位管理(zwgl.html)
+*/
+/* CSS Document */
+
+/*营销活动策划*/
+.main-part{ width:99%; margin:0 auto;}
+.seach-body{  position:relative; min-width:940px;}
+.sele-condion{ margin-top:10px; height:60px;}
+.sele-condion table{ width:100%}
+.sele-condion table tr td:first-child label{ width:60px}
+.sele-condion table tr td:nth-child(2){ margin-left:65px; display:inline-block}
+.sele-condion table tr td:nth-child(3){ text-align:right}
+.common-top{ margin-top:5px;}
+.input-div01{ height:25px; position:absolute; left:4px;}
+.input-div02{ height:25px; position:absolute; left:31%}
+.checkbox-l{ left:35%}
+.input-div03{ height:25px; position:absolute; right:4px}
+.input-div04{ height:25px; position:absolute; left:4px; top:32px;}
+.input-div05{ position:absolute; left:35%; top:32px;}
+.checkbox-div05{ height:25px; position:absolute; left:31%; top:32px; min-width:528px;}
+.main-part label{ width:85px; text-align:right; display:inline-block;}
+.sele-condion input{ width:195px; height:23px;}
+.select{ position:relative; right:6px}
+.sele-condion span{ position:relative; right:6px}
+.list-div{ height:15px; line-height:15px; margin-top:10px; margin-left:-22px}
+.list-div>span{ margin-right:6px; width:83px; display:inline-block}
+.list-div .com-width01{ width:73px;}
+.list-div .com-width02{ width:93px;}
+.span-positn{ position:relative; bottom:2px}
+.is-condi{ display:none;}
+.div_line{ border-top:1px dashed #dfdfdf; margin:0 5px}
+.index-main02{ position:absolute; top:129px; left:0px; bottom:0px; right:0px; z-index:100;}
+.position-ad{ top:255px;}
+.main-tab .condition{ margin-top: 4px; margin-right: 5px; height: 20px; }
+.main-tab .condition .cond-l{ float: right; }
+.main-tab .condition .cond-l a{ height: 20px; line-height: 20px; border: 1px solid #4d97e3; color: #1b7fe7; background-color: #d7eaff; padding: 0px 10px; margin-right: 5px; display: inline-block; }
+.main-tab .condition .cond-l a:hover{ border: 1px solid #ffa93a; color: #ff6000; background-color: #fffaba; cursor: pointer; }
+.main-tab .condition .cond-r{ float: right; }
+.main-tab .condition .cond-r a{ color: #1b7fe7; margin-right: 20px; line-height: 20px;}
+.main-tab .condition .cond-r a.active{ color: #ff6000; cursor: pointer; }
+.main-tab .result{ position:absolute; top:36px; left:10px; right:10px; bottom:40px; overflow-y:auto; }
+.pop_rela{ position:relative}
+.result .t-result{ width: 100%; border-collapse: collapse;}
+.result .t-head{ height: 25px; color: #00499b; background-color: #d7eaff; border: 1px solid #a6d0ff; padding: 3px 10px; }
+.query-crol{ width:100px; height:22px; line-height:22px;margin:0 auto; margin-top:14px; margin-bottom:13px}
+.crol-icon-up{ background:url(../images/common/icon_dbup.png) center bottom no-repeat; width:30px; height:15px; display:inline-block; position:relative;top:2px;}
+.crol-icon-down{ background:url(../images/common/icon_dbdown.png) center bottom no-repeat; width:30px; height:15px; display:inline-block; position:relative;top:2px;}
+.operate{ background: url(../images/common/icon_tool.png) no-repeat; width: 14px; height: 15px; cursor: pointer; border:0}
+.footer{  height:24px; position:absolute; left:10px; right:10px; bottom:12px;}
+.footer .highlight{ color: #ff0000; margin-left: 5px;}
+.highlight-t{ color: #ff0000;}
+.footer-r{ float: right; margin-right:10px;}
+.footer-r i{ margin-top: 3px; }
+
+.ope-popframe{ position:absolute; right:48px; top:30px; width:98px; height:240px; border:1px solid #ffa93a; background-color:#FFF; display:none; z-index:103}
+.ope-popframe div{ height:26px; border-top:1px solid #ffa93a}
+.ope-popframe div:first-child{ border-top:none}
+.ope-popframe div label{ color:#1b7fe7; text-align:center; line-height:26px;cursor:pointer; width:98px;}
+.ope-popframe div label:hover{ color:#ff6000;}
+
+/*展位管理*/
+.index-main-ad{ top:154px;}

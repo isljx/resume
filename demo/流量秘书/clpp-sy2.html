@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>流量秘书专题</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/content.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="iframe-content">
+	<div class="customer-warp">
+    	<h2><span class="title">策略群体名称</span><span class="span-from span-from-a"><input type="text" class="ipt-txt02 ipt-txt03"/>&nbsp;
+         <input type="button" class="span-from-btn" style="width:58px; height:23px;line-height:21px;color:#FFF;background-color:#3b6ad5;border:0;cursor:pointer;" value="查 询"/>&nbsp;
+         <input type="button" class="span-from-btn" style="width:106px;height:23px;line-height:21px;color:#FFF;background-color:#3b6ad5;border:0;cursor:pointer;" value="复制上月策略"/>&nbsp;
+         <input type="button" class="span-from-btn" style="width:58px;height:23px;line-height:21px;color:#FFF;background-color:#3b6ad5;border:0;cursor:pointer;" value="新 建"/></span></h2>
+        <div class="customer-list">
+          <ul id="content_span">
+            <li class="selected"><ul>
+            	<li>
+                	<div class="span-box span-box02">
+                    	<div class="top">
+                            <div class="title_02">全维度优质客户</div>
+                            <p><label>目标用户群名称：</label>全维度优质客户、高频次竞品使用客户。。。</p>
+                            <p><label>营销政策：</label>定义一个目标客户清单池，通过可定义区分客户群体清单池的通路针对性的在用户触点上设置流秘安装引导，刺激用户下载安装。</p>
+                        </div>
+                        <div><p>【套餐饱和度在70%以上且积分余额>1000分】或</p>
+<p>【基本包选择4G58以上套餐的有使用4G网络的用户】或【第一电子渠道偏好为网上营业厅且DOU大于500M且饱和度大于80%且网龄特征[60,60+)月&amp;[12-36)月的农村&amp;集团市场用户】的流量高价值用户。</p>
+<p>备注：剔除白黑红灰名单、投诉常客及免打扰、不限量流量套餐客户、已经激活登录流量秘书客户。</p>
+</div>
+                    </div>
+            
+                </li>
+                <li>
+                	<div class="span-box span-box02">
+                    	<div class="top">
+                            <div class="title_02 ad_space">高DOU、高饱和且<br>产品体验基础的竞品客户</div>
+                            <p><label>目标用户群名称：</label>全维度优质客户、高频次竞品使用客户。。。</p>
+                            <p><label>营销政策：</label>定提醒客户进行流量数据校准。</p>
+                        </div>
+                        <div></div>
+                    </div>
+                    
+                </li>
+                <li>
+                	<div class="span-box span-box02">
+                    	<div class="top">
+                            <div class="title_02">高DOU客户</div>
+                            <p><label>目标用户群名称：</label>全维度优质客户、高频次竞品使用客户。。。</p>
+                            <p><label>营销政策：</label>定义一个目标客户清单池，通过可定义区分客户群体清单池的通路针对性。</p>
+                        </div>
+                        <div></div>
+                    </div>
+                    
+                </li>
+                <li>
+                	<div class="span-box span-box02">
+                    	<div class="top">
+                            <div class="title_02">高饱和流量需求型客户</div>
+                            <p><label>目标用户群名称：</label>全维度优质客户、高频次竞品使用客户。。。</p>
+                            <p><label>营销政策：</label>定义一个目标客户清单池，通过可定义区分客户群体清单池的通路针对性。</p>
+                        </div>
+                        <div></div>
+                    </div>
+                   
+                </li>
+                <li>
+                	<div class="span-box span-box02">
+                    	<div class="top">
+                            <div class="title_02">高频次竞品使用客户</div>
+                            <p><label>目标用户群名称：</label>全维度优质客户、高频次竞品使用客户。。。</p>
+                            <p><label>营销政策：</label>定义一个目标客户清单池，通过可定义区分客户群体清单池的通路针对性。</p>
+                        </div>
+                        <div></div>
+                    </div>
+                   
+                </li>
+                <li class="empty">
+                	<div class="span-box nodata">
+                    	&nbsp;
+                    </div>
+                </li>
+            </ul></li>
+            <li>内容2</li>
+            <li>内容3</li>
+          </ul>
+          <ul class="report-pages">
+            <li class="selected"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>  
+        </div>
+        
+    </div>
+</div>  
+</body>
+</html>
+<script src="js/3rd/jquery-1.8.3.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+$(function(){
+	$(".customer-list li").not($(".empty")).children(".span-box").hover(function(){
+			$(".span-box .top").stop(true);
+			$(".customer-list li").not($(".empty")).children(".span-box").addClass("selected").children(".top").slideUp("slow");
+		},function(){
+			$(".customer-list li").not($(".empty")).children(".span-box").removeClass("selected").children(".top").slideDown("slow");
+			});
+     //左右切换
+	 var a =$("#content_span>li.selected").siblings();
+	 a.hide();
+	 $(".report-pages li").click(function(){
+		  
+		 var indx = $(this).index();
+		 $(this).siblings().removeClass("selected");
+		 $(this).addClass("selected"); 
+		 var a = $("#content_span>li").eq(indx);
+		 $(a).siblings().hide();
+		 $(a).show();
+		 });
+	});
+</script>

@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中国移动-新疆经营分析系统</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bodyDiv">
+<div class="label-tabs">
+<a class="label-a active" href="javascript:;">选择审批人<i class="icon-down-oran"></i></a>
+<a class="label-a" href="javascript:;" class="active">审批流程图<i class="icon-down-oran"></i></a>
+<a class="label-a" href="javascript:;" class="active">审批历史记录<i class="icon-down-oran"></i></a>
+</div>
+<div>
+<div class="marketing-history dspbk">
+
+		<div class="maketiing-left">
+        	<div>
+            	<span class="fB f12px hitory-title">待选择审批人/组</span>
+            </div>
+            <div style=" position:relative">
+            	<input type="text " class="common-text t295px" placeholder="输入审批人姓名、部门名称" />
+                <i class="icon-find icon-input"></i>
+            </div>
+            <div style="width:100% ; height:370px; overflow:auto; overflow-x:hidden">
+            	<img  style="margin-top: 10px;margin-left: 5px;"src="images/common/nav.png" />
+            </div>
+        </div><!-- left-->
+        <div class="maketing-right">
+        	<div> 
+            	<span class="f12px fB right-top">已选择</span >
+           		 <span class="orange">(所选的审批人员全部通过才能算活动审批完成)</span>
+            </div>
+            <div style="height:374px;">
+            <table class="common-table" style="width:100% ; ">
+							<tr class="first-tr">
+								<th class="t-title">审批人标识</th>
+								<th>审批人姓名</th>
+								<th>审批人部门</th>
+								<th>审批人号码</th>
+                                <th>操作</th>
+							</tr>
+                            <tr>
+                            	<td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                            </tr>
+                            <tr>
+                            	<td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                            </tr>
+                            <tr>
+                            	<td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                            </tr>
+							 <tr>
+                            	<td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                            </tr>
+                             <tr>
+                            	<td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                                <td>&nbsp </td>
+                            </tr>
+</table>
+            </div>
+            <!-- table-->
+            <div class="right-bottom">
+            
+                <div class="right-bottom-right">
+                <a href="javascript:;" class="page-btn"><i class="arrow-dbleft"></i></a>
+               <a href="javascript:;" class="page-btn"><i class="arrow-left"></i></a>
+				<a href="javascript:;" class="page-btn"><i class="arrow-right"></i></a>
+                <a href="javascript:;" class="page-btn"><i class="arrow-dbright"></i></a>
+                <span> (共<span style="color:red;">60</span>条)</span>
+
+                <span><span class="orange">2</span ><span style="color:#999999">/5页 </span></span>
+                <span>每页条数：</span>
+                
+
+<div class="divselect"  id="select-page">
+      <cite>1</cite>
+      <ul>
+         <li><a href="javascript:;" selectid="魅族">2</a></li>
+      </ul>
+  </div>
+<span>到</span>
+<input type="text" class="page-text h22px">
+<span>页</span>
+
+<input type="button" class="page-button" value="GO">
+
+               	</div>
+            </div>
+        	
+        </div>
+        
+</div>
+		<div  class="marketing-history " >content2</div>
+        <div class="marketing-history" >content3</div>
+        </div>
+
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/divselect.js"></script>
+</body>
+
+
+<script type="text/javascript">
+
+
+
+$(function(){
+	$.divselect(".divselect");
+	
+	$('.common-table').find('td').parent('tr').click(function(){
+	$(this).addClass('active').siblings('tr').removeClass('active');
+  $('.common-table').find('tr:eq(0)').removeClass('nobottom');
+   })
+ $('.common-table').find('tr:eq(1)').click(function(){
+  $(this).addClass('active').siblings('tr').removeClass('active');
+  $('.common-table').find('tr:eq(0)').addClass('nobottom');
+ })
+$('.common-table').find('tr:eq(1)').hover(function(){
+  $(this).addClass('hover');
+  $('.common-table').find('tr:eq(0)').addClass('borderhover');
+ },function(){
+ $(this).removeClass('hover');
+  $('.common-table').find('tr:eq(0)').removeClass('borderhover');
+})
+
+   $('.common-table tr:even').addClass("bg");
+});
+//点击label-tabs切换事件
+$('.label-tabs').children('a').click(function(){
+	var _index = $(this).index();
+	$(this).addClass('active').siblings().removeClass('active');
+	//alert($(this).parent().siblings().children().eq(_index).html());
+	$(this).parent().siblings().children().eq(_index).show().siblings('div').hide();;
+	
+});
+
+$('.common-table').find('td').parent('tr').click(function(){
+	$(this).addClass('active').siblings('tr').removeClass('active');
+});
+
+
+$('.common-table tr:even').addClass("bg");
+
+
+$('.common-table2 tr').each(function() {
+  $(this).find('td:eq(0)').addClass('td-gray');
+});
+
+</script>
+
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>流量秘书专题</title>
+<link href="js/bootstrap-3.1.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="js/3rd/icheck/skins/my/my.css">
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/content.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="iframe-content">
+  <div class="new-main">
+    <div class="new-title"><a href="#">策略匹配</a><a>&gt;</a><span>创建</span></div>
+    <div class="new-span01">
+      <label>策略群体名称：</label><input type="text" value="高饱和且有产品体验基础的的竞品客户" class="new-span01-input"></input>
+       <div id="choose">+&nbsp;选择群体</div>
+    </div>
+    <div class="new-span02"><label>目标用户群名称：</label><textarea class="new-span02-textarea"></textarea></div>
+    <div class="new-span03"><label>营销政策：</label><textarea class="new-span03-textarea"></textarea></div>
+    <div class="new-span02"><label>营销通路：</label><textarea class="new-span02-textarea"></textarea></div>
+    <div class="new-span03"><label>营销产品：</label><textarea class="new-span03-textarea"></textarea></div>
+    <div class="new-span04"><label>营销时机：</label><input class="new-span04-textarea"></input></div>
+    <div class="new-button">
+      <button >保 存</button>&nbsp;&nbsp;<button>取 消</button>
+    </div>
+    <div class="pop_frame">
+     <div class="pop_frame-inner">
+      <div class="pop_frame-title">
+        <label>目标用户群名称：</label><input type="text"/><img src="images/common/search_icon.png" /><button class="t-button" >确 定</button>&nbsp;&nbsp;&nbsp;<button>取 消</button>
+      </div>
+      <ul id="frame-list">
+       <li class="selected"><div class="pop_frame-content">
+        <ul>
+         <li><div><div class="div001"><input type="checkbox" ></div><div class="div002"><span class="com-color01">全维度优质客户</span></div></div></li>
+         <li><div><div class="div001"><input type="checkbox" ></div><div class="div002"><span class="com-color01">高DOU、高饱和且有<br>产品体验基础的竞品客户</span></div></div></li>
+         <li><div><div class="div001"><input type="checkbox" ></div><div class="div002"><span class="com-color01">高DOU客户</span></div></div></li>
+         <li><div><div class="div001"><input type="checkbox" ></div><div class="div002"><span class="com-color01">高饱和流量需求型</span></div></div></li>
+         <li><div><div class="div001"><input type="checkbox" ></div><div class="div002"><span class="com-color01">高频次竞品使用客户</span></div></div></li>
+        </ul>
+      </div></li>
+      <li>列表2</li>
+      <li>列表3</li>
+      <li>列表4</li>
+      </ul>
+      <ul class="frame-pages">
+            <li class="selected"><a href="#" class="frame-a-color01">1</a></li>
+            <li><a href="#" class="frame-a-color01">2</a></li>
+            <li><a href="#" class="frame-a-color01">3</a></li>
+            <li><a href="#" class="frame-a-color01">4</a></li>
+      </ul>
+     </div> 
+    </div>  
+   </div>
+</div> 
+<div class="shade_div"></div> 
+</body>
+</html>
+<script src="js/3rd/jquery-1.8.3.min.js"></script>
+<script src="js/jQ1-7-2.js"></script>
+<script src="js/3rd/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/3rd/icheck/icheck.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+$(function(){
+	
+	$('input[type="checkbox"]').iCheck({
+		checkboxClass: 'icheckbox_polaris',
+		radioClass: 'iradio_polaris'
+	}).on("ifToggled",function(event,n){  	     
+		 var s = $(this).parents(".div001").siblings().children();
+	     var m = $(s).hasClass("com-color02");
+		 if(m == true){
+			 $(s).removeClass("com-color02");}
+         else{
+			 $(s).addClass("com-color02");}
+	 });
+	}); 
+     //左右切换
+	 var a =$("#frame-list>li.selected").siblings();
+	 a.hide();
+	
+	 //$("ul.frame-pages").children().children().removeClass("frame-a-color01").addClass("frame-a-color02");
+	 $(".frame-pages li").click(function(){
+		  
+		 var indx = $(this).index();
+		 $(this).siblings().removeClass("selected");
+		 $(this).addClass("selected"); 
+		 var a = $("#frame-list>li").eq(indx);
+		 $(a).siblings().hide();
+		 $(a).show();
+		 });  
+	
+	//弹出框遮盖效果
+	$("#choose").click(function(){
+
+		$(".shade_div").show();
+		
+		var _obj=$(".pop_frame").css("z-index","1003");
+		$(_obj).show();
+		
+
+		//进入遮罩层隐藏
+		$(".shade_div,.t-button").click(function(){
+			_obj.hide();
+			$(".shade_div").hide();
+		});
+	});
+	
+</script>

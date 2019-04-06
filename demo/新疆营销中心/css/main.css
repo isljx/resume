@@ -1,0 +1,91 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*
+* author: 严鑫强、许财明 
+* date: 2015-06-06
+* scope: 主页(sy.html)
+*/
+.index-main{ min-height:560px;position:absolute;left:0px; right:0px; top:0px; bottom:0px;}
+.index-left{ position:absolute; left:10px; right:305px; top:10px; bottom:0px; min-width:564px;}
+.index-right{ width:285px; position:absolute; right:10px; top:0px; bottom:0px;}
+.index-left .label-tabs{ width:400px; margin:0 auto}
+.icon-list{ background-image: url(../images/common/icon_list.png); width:7px; height:6px; margin-right:5px; margin-bottom:3px;}
+.top-list{ width:35px; float: left; margin-right: 21px}
+.top-list li{ line-height: 22px;}
+.common-box01{ position:absolute; left:0px; right:0px;}
+.common-box02{ position:absolute; left:0px; right:0px; bottom:113px; top:242px; min-height:181px;}
+.common-box03{ position:absolute; left:0px; right:0px; bottom:10px; height:90px; min-width:542px;}
+.common-box04{ position:absolute; left:0px; right:0px; width:263px; height:187px; top:0px;}
+.common-box05{ position:absolute; left:0px; right:0px; width:263px; height:150px; top:200px;}
+.common-box06{ position:absolute; left:0px; right:0px; bottom:10px; width:263px; top:362px; min-height:175px;}
+.common-box .inline-list{ margin-left:-45px; margin-bottom: 10px}
+.common-box .inline-list li{ display: inline-block; margin-left:55px; width:80px; margin-top:10px}
+.abst-center{ position:absolute;top:10px;}
+.box06-posit{ position:absolute; left:10px; right:10px; top:34px; bottom:0px;}
+.box01-title{ margin-top:10px;}
+.box01-title span{ position:relative; right:3px; bottom:3px;}
+.box01-chart{ width:659px; margin:0 auto; margin-bottom:10px;}
+.box01-left{ float:left}
+.box01-right{ float:right; margin-top:-22px}
+.box01-inner{ display:inline-block; position:relative; top:3px;}
+.order-check{ width:125px; margin:0 auto}
+.abst-center label{ display:inline-block; width:25px;}
+.abst-center label{ line-height:22px;}
+
+.img-out{ position:absolute; left:0px; right:0px; top:34px; bottom:0px;}
+.img-posit{ position:absolute;left:0;right:0;top:0;bottom:0; margin:auto; overflow:hidden; width:670px; height:135px;}
+.img-posit div{ float:left}
+.img-posit table{ margin-top:3px;}
+.img-posit table td{ text-align:center}
+.box02-left{ margin-left:8px;margin-right:76px;}
+.box02-left div:nth-child(2){ margin-top:8px; position:relative;width:196px;height:120px;}
+.box02-right div:nth-child(2){ margin-top:7px; position:relative;width:320px;height:120px;}
+.box02-left span{ background:url(../images/common/blue_circle.png) no-repeat; width:84px; height:25px; line-height:25px; display:inline-block; color:#1b7fe7; cursor:pointer}
+.box02-right span{ background:url(../images/common/green_circle.png) no-repeat; width:84px; height:25px; line-height:25px; display:inline-block; color:#37dd36; cursor:pointer}
+.plan-title{ background:url(../images/common/blue_title.png) no-repeat; width:25px; height:95px; display:inline-block; color:#FFF; font-weight:bold; text-align:center; padding-top:35px; margin-right:10px; font-size:13px}
+.check-title{ background:url(../images/common/green_title.png) no-repeat; width:25px; height:95px; display:inline-block; color:#FFF; font-weight:bold; text-align:center; padding-top:35px; margin-right:10px; font-size:13px;}
+
+.arrows-b01{background:url(../images/common/blue_r.png) no-repeat; width:16px; height:9px;}
+.arrows-b02{background:url(../images/common/blue_b.png) no-repeat;width:9px;height:13px;}
+.arrows-b03{background:url(../images/common/blue_l.png) no-repeat;width:16px;height:9px;}
+
+.arrows-g01{background:url(../images/common/green_r.png) no-repeat;width:16px;height:9px;}
+.arrows-g02{background:url(../images/common/green_b.png) no-repeat; width:9px; height:13px;}
+.arrows-g03{background:url(../images/common/green_l.png) no-repeat;width:16px;height:9px;}
+
+/*弹出框*/
+.main-frame{ position:absolute;left:0;right:0;top:0;bottom:0;margin:auto; width:600px; height:350px; border:1px solid #a5d0ff; display:none; background-color:#FFF}
+.frame-t{height:32px; line-height:32px;background-color:#4e99e3; padding:0 10px;}
+.frame-t h2{ color:#FFF; font-weight:bold; display:inline-block}
+.frame-t i{ background:url(../images/common/icon_close.png) no-repeat; width:10px; height:8px; float:right; position:relative;top:11px; cursor:pointer}
+.m-up{ width:92px; margin:20px auto}
+.m-up label{ font-weight:bold}
+.m-middle{ width:422px; height:16px; margin:10px auto;}
+.m-middle span{ color:#a2a1a0}
+.m-down{ clear:both; width:542px; margin:10px auto}
+.m-down p{ text-indent:24px; line-height:24px;}
+
+/*数据表格切换*/
+.order-check ul{ width:123px; border:1px solid #4185fb; background-color:#FFF; margin:0px auto; overflow:hidden; border-radius:30px;}
+.order-check ul li{ width:41px; float:left; color:#000; height:24px;; line-height:24px; text-align:center; cursor:pointer;}
+.order-check ul li.selected{ background-color:#4d97e3; color:#FFF}
+
+/*重新定义select下拉框*/
+.divselect02{width:58px;}
+.divselect02 cite{width:26px; height:22px;line-height:22px; display:block; color:#626262; cursor:pointer; font-weight:bold; padding-left:4px; padding-right:20px;background:url(../images/common/xjt.png) no-repeat right center;}
+.divselect02 ul{width:52px; background-color:#ffffff; position:absolute; z-index:20000; margin-top:-1px; display:none;}
+.divselect02 ul li{height:24px; line-height:24px;}
+.divselect02 ul li a{display:block; height:24px; color:#333333; text-decoration:none; padding-left:5px; padding-right:5px; font-weight:bold}
+.divselect02 ul li a:hover{*background-color:#CCC;}
+
+/*滑块样式*/
+.slick-item{ text-align: center; }
+.slick-item i{ margin-bottom: 3px; height: 35px; background-repeat: no-repeat; }
+.common-box .slick-slider{ margin-bottom: 17px; }
+.common-box .slick-list{ margin-top: 20px; margin-bottom:43px;}
+.common-box .slick-dots{ bottom: -27px; }
+.common-box .slick-dots li{ width: 7px; height: 6px; margin: 0 3px; }
+.common-box .slick-dots li button:before{display: none; }
+.common-box .slick-dots button{ background: url(../images/common/dot_gray.png) no-repeat center; width: 7px; height: 6px; padding: 0;}
+.common-box .slick-dots li.slick-active button{ background-image: url(../images/common/dot_oran.png); }
+
