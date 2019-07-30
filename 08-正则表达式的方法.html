@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <textarea></textarea>
+  <script>
+    // 跟正则表达式相关的方法
+    // 1 RegExp对象        (//,ig) 
+    // test()   匹配
+    // exec()   提取 提取一个内容
+
+    // 2 String对象
+    // match(\\)  提取 可以提取多个内容
+    // replace(\\,'')   替换
+    // split()     切割
+    // search()
+
+    // 3. 提取日期中的年部分  2015-5-10
+    var dateStr = '2015-1-5';
+    var reg = /(\d{4})-(\d{1,2})-(\d{1,2})/;
+    
+
+    // // reg.test(dateStr);
+    // // reg.exec(dateStr);
+    dateStr.match(reg);
+
+    console.log(RegExp.$1);
+    console.log(RegExp.$2);
+    console.log(RegExp.$3);
+  </script>
+</body>
+</html>

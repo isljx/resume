@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+str
+// 类数组转数组
+变量 
+// let const
+// 无变量提升
+// 不能给window增加属性
+// 不能重复定义
+// (定义需要赋值，不能修改值)
+// 块级作用域 {}
+解构赋值
+// let[x,y,z=222]=arr[1,2,undefined]
+// let{name,id:value}={name:"ljx",id:99}
+// let[x,y]="sty"
+str原型方法
+//`可以加${变量}`
+// includes('指定字符'，查找位置)
+ // startWith() endWith()        判断开头字符
+ // repaeat(num)                 字符串重复打印
+ // padStart() padEnd()          补全(长度，指定字符)
+Array
+// Array.of(7)                          返回只有一个7的数组
+// Array.from(类数组)                         转成数组
+// copyWithin(替换开始位置，复制起点，终点)  复制自己替换自己
+// fill('指定字符',索引，索引)                 替换每一项
+// 
+// ***********第二个参数改变this
+// filter(fn(item,index){true 留下})            遍历
+// find(fn(item){true 停止})                   查找1个
+// findIndex() 同上                          查找返回索引
+// every()                                 遍历满足同条件
+// reduce(fn(上次返回值,item),初始返回值)        迭代
+// reduceRight()                               迭代反方向
+// entries()   遍历[index,item] 配合for of使用 
+箭头函数
+// 没有this，arguments，不能用new执行
+Object
+// Object.is(,)                               比较相等
+// Object.assign(1,2)  {...1,...2}         合并对象，合到1
+// Object.keys(对象)                        [属性,属性]
+// Object.values(对象)                      [值，值，值]
+// Object.entries(对象)                     [[属性,值],]
+// get name(){return}/set name(val){}        get//set
+// 获取对象的name属性 拦截    
+let sym1=Symbol('描述')
+// 多用于对象的属性名
+// 可以转Bool  to.String
+// xxx=Symbol.for("描述")           查找描述相同赋值/创建
+// Symbol.keyFor(xxx)                  看上面的'描述'
+xx = new Set([1,2,3,3])
+// 去除重复的 只有value
+// xx.add(10).add(11)                添加 /返回实例
+// xx.delete(3)                      删除 /返回true/false
+// xx.clear()                        清空
+// xx.has(3)                         判断/返回true/false
+// 遍历的方法
+// xx.forEach((value,value,实例)=>{})
+// for(let key of xx.keys())
+xx = new Map([[key,value],[]])
+// 键可以不是字符串(toSing方法)
+// xx.get(key)
+// xx.set(key,value)
+// xx.has(key)
+// xx.delete(key)
+// xx.forEach((v,k,input)=>{})
+xx = new Proxy({obj},{拦截方法下面})
+// 代理obj   xx.name=obj.name
+// get(obj,key,xx){}                    拦截读取
+// set(obj,key,value,proxy){}               设置
+// has(){}
+// apply(obj,修改的this,参数s){}       obj(this,1,2,3)
+class A{
+	constructor(){}
+	getA(){}         实例方法
+	static getB(){}  静态方法
+}
+class B extends A{
+	get(){
+		super.getA   继承
+	}
+}
+// 不可枚举
+// 静态方法继承静态 动态继承动态
+// super=> constructor  原型 父类本身
+xx = new Promise((fn1,fn2)=>{})              给f12传参
+// 状态 pending=>resolve() =>Fulfilled(成功)
+// 状态 pending=>reject() =>Rejected(失败)
+// xx.then(()=>{},()=>{})                    设置f12内容
+// xx.then(()=>{}).catch(()=>{})            catch捕获错误
+// Promise.all([xx1,xx2,xx3]).then     [],一个有错误全错误
+// Promise.race([xx1,xx2,xx3]).then        执行率先改变的
+async function xxx(){
+	await xx                            同步/不用then
+}                           
+// return 的内容就是成功回掉的参数
+// 默认成功  return前有错误则失败
+// throw new Error('抛出错误')
+esmodule  模块
+// export default{}                        导出
+// import{x,x,x} from "./.js"           *as 引入
+//    
+// html引入 type=module
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

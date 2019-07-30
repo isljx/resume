@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <!--[if lt IE 9]>     [endif]
+    transform-style：preserve-3d
+    transform: perspective(500px)
+    perspective-origin
+    backface-visibility：visible -->
+</head>
+<body>
+	<script type="text/javascript">
+    document.cookie="name=zs;path=/;"
+    // JSON.parse()JSON.stringify()  eval('('+str+')')
+	// void()  
+    // document.implementation.hasFeature("MouseEvent", "3.0") 
+    // arguments.callee
+	自定义属性 //NamedNodeMap
+	// getAttribute('age')    获取
+	// setAttribute('age',18)  设置set
+	// removeAttribute('age')  删除remove
+    // dataset  =>DOMStringMap 
+    
+    CSS //CSSStyleDeclaration,CSSStyleSheet
+    //  element.style.getPropertyValue(color)
+    //  document.defaultView.getComputedStyle(myDiv, null)  获取样式
+    //  myDiv.currentStyle /ie/
+    //  document.styleSheets/ele.sheet[ie,styleSheet]       样式表
+    //  insertRule('div{color:red}',0)                      在样式表中插入规则
+    //  deleteRule()
+    //  ele.getBoundingClientRect()
+	获取元素 //HTMLCollection
+	// getElementById('main')                  ID
+	// getElementsByTagName('div')					   标签s	
+	// getElementsByClassName()                        class
+    // querySelector('#Id').class            选择器1
+    // queryselectorAll()                    选择器s
+    // activeElement   focus()  hasFocus()
+    // compatMode                解析模式
+    // readyState  
+    // scrollIntoView()  scrollIntoViewIfNeeded       元素锚点      
+     
+    DOM插入
+    // innertext/innerHTML/textContent/
+    // insertAdjacentHTML =>beforebegin/afterbegin/beforeend/afterend 
+    DOM遍历/范围
+    // document.createTreeWalker()
+    // document.createNodeIterator(document.body,NodeFilter.SHOW_ELEMENT,filter,false参考)
+    // var filter = function(node){ 
+    //   return node.tagName.toLowerCase() == "li" ? 
+    //   NodeFilter.FILTER_ACCEPT : 
+    //   NodeFilter.FILTER_SKIP; NodeFilter.FILTER_REJECT[跳过包括子节点]
+    // };
+    // nextNode()
+    // 范围
+    // range = document.createRange()  创建范围
+    // range.selectNodeContents(ele)   添加范围
+    // range.selectNode(ele)           包括自身
+    // range.deleteContents() /extractContents[返回]   删除文档中ele
+    // cloneContents                   克隆范围文本
+    // cloneRange                      克隆范围
+    // insertNode()                    范围内前插入
+    // surroundContents(ele)           范围在ele内     
+
+    事件
+    //DOMContentLoaded       dom加载玩执行   
+    // addEventListener('click',function,false)  添加事件
+    // removeEventListener()                      移除事件 
+    // attachEvent('onclick',function)            ie
+    // bb = new Event('aa')                       自定义事件
+    // new CustomEvent('aa',{})                   自定义事件
+    // xx.dispatchEvent(new Event)             触发事件
+    // onfocus       获取焦点
+    // onblur        失去焦点
+    // onmouseover   鼠标移入enter 不会冒泡/e.relatedTarget
+    // onmouseout    鼠标移出leave
+    // onmousedown   鼠标按下 up
+    // onmousemove   鼠标移动
+    // keydown       键盘按下
+    // keypress      键盘长按
+    // keyup         键盘弹起
+    // onscroll      滚动条
+    // onchange      文本框改变
+    // mousewheel    滚轮  e.wheelDelta
+    // textInput     文本输入
+    // contextmenu   文本菜单
+    // beforeunload  关闭页面之前 e.returnValue
+    // pageshow      页面显示
+    // hashchange    URL变化
+    // audion.timeupdate     正在播放定时器
+    // audion.duration       总时长
+    // audion.currentTime    当前时长
+    // audion.volume         声音 
+    // webkitTransitionEnd         某元素过渡效果完毕时
+    // dispatchEvent(document.createEvent("MouseEvents"))
+    移动端事件
+    // IOS
+    // orientation         屏幕翻转
+    // window.orientation  翻转度数
+    // deviceorientation   手机朝向
+    // touchstart               手触摸            
+    // touchmove                手移动
+    // touchend                 手离开
+    // touchcancel              触摸中断
+    // 手势事件（两个手指）
+    // gesturestart             另一个手指点                      
+    // gesturechange            移动
+    // gestureend               离开
+    // 
+    // e.touches          正在活动的
+    // e.targetTouches    事件目标
+    // e.changedTouches   发生改变的
+    // e.rotation
+    // e.scale
+     
+    事件对象
+    // e.target触发元素  e.currenttarget 绑定元素
+    // 绑定元素    
+    // e.type       事件名称'click'
+    // e.clientX    可视区域坐标
+    // e.pageX      页面坐标
+    // e.screenX    屏幕
+    // e.offsetX    相对元素
+    // e.preventDefault         阻止默认行为
+    // e.stopPropagation()	    阻止冒泡
+    // e.keyCode                键盘码
+    // e.stoplmmediatePropagation()  button绑定两个事件，在第一个事件中加上能阻止第二事件运行
+    节点 //nodeList
+    // parentNode/childNodes  所有节点
+    // children               元素节点
+    // firstChild            第一个子节点
+    // lastElementChild		最后一个子元素i9
+    // next(Element)Sibling/previous   下一个兄弟节点/上一个
+    // cloneNode()             克隆
+    // 父.contains(子)         判断父子
+
+    动态创建元素 
+    // document.write()           覆盖页面
+    // element.innerHTML               创造元素1
+    // document.createElement('div')   创造元素2
+    // removeChild('div')              删除子元素
+    // insertBefore(li,参考元素)   指定位置插入元素  
+    // replaceChild()                替换指定节点
+     
+    Bom
+    // alert()   prompt('提示输入') confirm('提示删除')
+    // onload                  页面加载完成
+    // onunload                页面卸载后
+    // location.href           链接
+    // location.assign		   链接
+    // location.replace        链接-不能返回
+    // location.reload()       f5
+    // location.hash
+    // history.forward() back()      前进后退
+    // history.go(1)   
+    // history.pushstate(obj,'',URL) 添加历史
+    // history.replaceState()          替换历史
+    // window.popstate(e.state)      点击回退触发
+    // navigator.userAgent           操作系统信息
+    
+    盒子位置长宽
+    // offsetLeft offsetWidth    Parent定位父元素/长宽包括所有
+    // clientWidth   视口高            
+    // scrollWidth   页面高
+    // 
+    // 布局视口，视觉视口，理想视口
+    // document.body.scrollHeight             网页
+    // document.documentElement.clientWidth   视口()
+    // window.innerWidth    视口
+    // window.outerWidth    窗口
+    // window.screenLeft    窗口相对屏幕
+    // screen.width         设备
+    
+    XHTML // <s:svg xmlns:s="http://www.w3.org/2000/svg" version="1.1"
+    // localName  namespaceURI  prefix   svg/url/s (^lookup)
+    // createElementNS(namespaceURL,tagname)
+    // createAttributeNS()
+    // getElementsByTagNameNS()
+    // importNode(node,true)  导入节点。不同文档
+    // setUserData(key,val,fun) getUserData  添加数据
+    
+    XML 
+    // document.implementation.createDocument(namespaceUri, root, doctype)
+    // new DOMParser().parseFromString(xmlstr,"text/xml")
+    // new XMLSerializer().serializeToString(xmlDom)   ie/dom.xml
+    // ie
+    // new ActiveXObject('MSXML2.DOMDocument.6.0').loadXML(xmlstr)  载入
+    // xmldom.async = true ; xmldom.load(xmlurl)                    解析
+    Array
+	// push() unshift()       添加
+	// pop()  shift() 	      取出 
+	// reverse()   反转
+	// sort()      排序
+	// concat()    拼接
+	// slice()     截取  , 
+	// splice()    删除  ,数量
+	// indexOf()lastIndexOf()  查找   元素。开始位置
+	// every(),filter(过滤),forEach(),map(),some(),
+	// join()      合并
+	String
+	// charAt(0)       获取字符  ,
+	// charCodeAt()    ASCII码   ,
+	// concat()       拼接
+	// substr()       截取   ,数量
+    // substring()    截取   , 
+	// indexOf()      返回下标    元素,
+	// trim()         删空格
+	// search()       查找(正则) 返回索引
+    // match()        查找(正则) 返回arr
+	// replace()      替换
+	// split()        切割
+	// toLowerCase  toUpperCase   小大写
+    Object
+    // getPrototypeOf()                         原型
+    // 父.isPrototypeOf(子)                     判断原型
+    // getOwnPropertyDescriptor(obj,key)        自身属性描述符
+    // getOwnPropertyNames()                    自身属性(包括不可枚举)
+    // hasOwnProperty()                         判断自身属性
+    // 
+    // preventExtensions()                      不可扩展
+    // freeze()                                 冻结
+    // isSealed()  seal(密封)                   是否密封
+    Math
+    // ceil  floor  round    取整  上下标 
+    // random                随机数
+    // trunc()               取整数
+    // sign()                判断正负零
+    表单
+    // new FormData(document.forms[0])
+    // submit/reset/                  事件/type
+    // required                     h5输入不能为空
+    // pattern='/\d/'               h5输入规则
+    // checkValidity                  输入是否有效
+    // select                        1选择文本事件/方法
+    // ele.selectionStart[end]         选择的文本内容索引
+    // ele.setSelectionRange(0,5)      选择文本
+    // copy cut paste                2复制粘贴事件
+    // e.clipboardData.setData("text/plain", value)      粘贴的对象
+    // 
+    // <select><option>
+    // add(new,old)                   添加
+    // remove(index)                  删除
+    // multiple                       多选
+    // selectedIndex                  选中索引
+    // size                           可见行
+    // 
+    // <iframe>
+    // designMode = on                可编辑
+    canvas
+    // getContext
+    // toDataURL("image/png")
+    // ######## 2d
+    // fillStyle/strokeStyle                     填充颜色/画笔颜色
+    // lineWidth,linCap                          画笔宽/末端形状
+    // fillRect/strokeRect/clearRect             矩形
+    // isPointInPath(x,y)                        点是否在路径上
+    // beginPath()                               ########开始路径
+    // moveTo()                                  移动画笔
+    // arc(x,y,半径，开始角度，结束角度，顺逆时针)  圆
+    // arcTo(x1,y1,x2,y2,半径)                   弧线
+    // bezierCurveTo(c1x,c1y,c2x,c2y,x,y)        贝塞尔曲线
+    // lineTo(x,y)                               直线
+    // rect()                                    矩形路径
+    // closePath()                               闭合路径
+    // stroke/fill/clip                          #########路径描边/填充/剪切
+    // ######## webgl
+    // clearColor(r,g,b,a)   
+    // viewport(x,y,w,h)                    
+    // clear(gl.COLOR_BUFFER_BIT)                清理缓存区
+    // var buffer = gl.createBuffer(); 
+    // gl.bindBuffer(gl.ARRAY_BUFFER, buffer)    绑定缓存区
+    绘制文字
+    // fillText/strokeText(字体,x,y,maxW)
+    // font(bold,14px,fontFamily)                字样式大小
+    // textAlign(start)                          对齐方式
+    // textBaseline(bottom)                      基线对齐  
+    // measureText(随意字体).width                计算宽度
+    变换
+    // transform(x,y)                            变换原点
+    // rotate(deg)                               绕原点旋转
+    // scale(1.0,1.0)                            缩放
+    // save()                                    存档
+    // restore()                                 读档
+    图片/阴影/渐变/填充图片/透明度/覆盖模式
+    // drawImage(imgeEle,x,y,w,h,imgx,imgy,imgw,imgh)   插入图片     
+    // shadowColor()                                    阴影颜色
+    // shadowOffsetX()                                  阴影偏移
+    // shadowBlur()                                     阴影模糊
+    // createLinearGradient(x1,y1,x2,y2)                渐变实例
+    // 实例.addColorStop(0-1, color)                    渐变颜色
+    // createRadialGradient(x1,y1,r1,x2,y2,r2)          放射渐变
+    // createPattern(img,'no-repeat')                   填充图片
+    // getImageData(x,y,w,h)data前4个代表一个像素
+    // putImageData(imgData,w,h)
+    // globalAlpha(1.0)                                 透明度
+    // globalCompositionOperation('source-over')后来的图形覆盖前面图                      
+	</script>
+</body>
+</html>

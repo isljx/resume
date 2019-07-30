@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+/*xxx:-webkit-full-screen {全屏伪类选择器}		*/
+	</style>
+	<title></title>
+	<script type="text/javascript">
+
+网络
+// window.navigator.onLine             网络boolean
+// online   offline                    联网/断网/事件
+全屏
+// .webkitRequestFullScreen()          全屏幕/前缀
+// document.mozCancelFullScreen()      关全屏/前缀 
+// document.webkitIsFullScreen()       是否全屏/前缀
+var xxx = new FileReader()
+// xxx.readAsText(this.files[0])       读取文件
+//xxx.readAsDataURL(this.files[0])     读取图片
+//xxx.onload=function(){回掉函数}
+//xxx.result                           读取的文件
+地理定位
+//navigator.geolocation              是否支持定位
+//navigator.geolocation.getCurrentPosition(成功fn(xxx),失败fn) 
+// xxx.coords.latitude               纬度
+// xxx.coords.longitude              经度
+拖拽 
+// draggable="true"                  标签设置可拖动
+// dragstart                         开始拖动(源文件)
+// drag                              拖动中(源文件)
+// dragend                           停止拖动(源文件)
+// dragenter                         进入
+// dragover                          悬停在上方
+// dragleave						 离开
+// drop(要阻止悬梯上方的默认行为)      松手
+// dropEffect(move)                  dragenter放置目标
+// effectAllowed('all')              dragestart拖动目标
+// event.dataTransfer.setData('text/html',数据)   存储拖动数据
+// event.dataTransfer.getData('text/html')        获取数据
+视频 video
+// <<html>>
+// poster                            载入前显示图片
+// controls                          控件
+// <<html>>
+// canplay                            视频加载完成
+// timeupdate                         视频播放中
+// ended                              视频播放结束
+// duration                            视频总时长
+// currentTime                         当前时间
+// play()  pause()                     播放/暂停
+postMessage
+// iframe.contentWindow.postMessage(data,域名)
+// window.onmessage(eve)
+</script>
+</head>
+<body>
+<input type="file" name="" multiple 多选>
+</body>
+</html>
